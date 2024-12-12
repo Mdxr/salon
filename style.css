@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Italianno&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.banner{
+    background-color: #A9947E;
+    padding: 5px 0;
+    color: white;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    box-shadow: 0 4px    25px rgba(0,0,0,5%);
+}
+header .links{
+    display: flex;
+    gap: 1rem;
+}
+header .links a{
+    color: #A9947E;
+    text-decoration: none;
+}
+header .links a:hover{
+    color: #503C2F;
+}
+header .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .icons a svg:hover{
+    fill: #503C2F;
+}
+header .logo{
+    font-family: "Italianno", cursive;
+    font-size: 56px;
+    font-weight: 300;
+}
+header .logo span{
+    font-family: "Italianno", cursive;
+    color: #A9947E;
+}
+
+/* hero section starts here */
+#hero{
+    display: grid;
+    min-height: 83dvh;
+    grid-template-columns: 40% 60%;
+    background-color: #F7F0E4;
+}
+#hero .visual{
+    background-image: url('./media/hero-page-girl.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#hero .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero .info h1{
+    font-family: "Italiana", sans-serif;
+    font-size: 11dvw;
+    font-weight: 200;
+}
+#hero .info p{
+    font-family: "Italianno", cursive;
+    font-size: 6dvw;
+    color: #A9947E;
+    width: 100%;
+    text-align: right;
+}
+#hero .info .elements{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#hero .info a{
+    border: 1px solid #503C2F;
+    color: #503C2F;
+    text-decoration: none;
+    padding: .6rem 2.5rem;
+    border-radius: 50px;
+    transition: .2s ease-in-out;
+}
+#hero .info a:hover{
+    color: white;
+    background-color: #503C2F;
+}
