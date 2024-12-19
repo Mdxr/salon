@@ -348,3 +348,7 @@ footer .links a:hover{
 #sm-icons img{
     width: 150px;
 }
+
+.empty{
+    border: 1px solid red !important;
+}
