@@ -38,12 +38,12 @@ header .icons{
 header .icons a svg:hover{
     fill: #503C2F;
 }
-header .logo{
+.logo{
     font-family: "Italianno", cursive;
     font-size: 56px;
     font-weight: 300;
 }
-header .logo span{
+.logo span{
     font-family: "Italianno", cursive;
     color: #A9947E;
 }
@@ -85,7 +85,7 @@ header .logo span{
     align-items: center;
     flex-direction: column;
 }
-#hero .info a{
+.bordered-btn{
     border: 1px solid #503C2F;
     color: #503C2F;
     text-decoration: none;
@@ -93,7 +93,258 @@ header .logo span{
     border-radius: 50px;
     transition: .2s ease-in-out;
 }
-#hero .info a:hover{
+.bordered-btn:hover{
     color: white;
     background-color: #503C2F;
+}
+/* featured section */
+#featured{
+    padding: .5rem 2rem;
+    margin-top: 3rem;
+}
+#featured h1{
+    font-family: 'Italiana', sans-serif;
+    color: #A9947E;
+    font-size: 32px;
+}
+#featured .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 1rem;
+}
+#featured .container .card img{
+    width: 100%;
+}
+#featured .container .card h3{
+    color: #A9947E;
+    font-weight: 400;
+    margin-top: .5rem;
+}
+#featured .container .card:hover h3{
+    color: #503C2F;
+}
+/* discount section */
+#discount{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 300px;
+    margin-top: 4rem;
+}
+#discount .visual{
+    background-image: url('/media/image\ 3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#discount .info{
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F0E4;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+}
+#discount .info h1{
+    font-family: "Italiana", sans-serif;
+    font-size: 39px;
+}
+#discount .info h3{
+    font-family: "Italianno", cursive;
+    text-align: end;
+    font-size: 28px;
+    color: #A9947E;
+}
+#discount .info ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#discount .info ul p{
+    color: #503C2F;
+}
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+footer .cpr p{
+    margin-top: -1rem;
+    color: #503C2F;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+footer .links a{
+    text-decoration: none;
+    color: #A9947E;
+}
+footer .links a:hover{
+    text-decoration: none;
+    color: #503C2F;
+}
+
+/* booking page */
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 400px;
+}
+.form-container .visual{
+    background-image: url('/media/image\ 3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 2rem 4rem;
+    gap: 1rem;
+}
+.form-container form textarea{
+    width: 100%;
+}
+.form-container form input{
+    width: 50%;
+}
+.form-container form input, .form-container form textarea{
+    padding: 6px 10px;
+    border: 1px solid #A9947E;
+    color: #503C2F;
+    height: 100%;
+    border-radius: 5px;
+}
+.form-container form button{
+    background-color: #503C2F;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+}
+.form-container form button:hover{
+    background-color: #A9947E;
+    color: #F7F0E4;
+}
+.form-container form div{
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+}
+.salon-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 10rem;
+    margin-top: 3rem;
+}
+.salon-info .card{
+    font-size: 14px;
+    border: 1px solid #A9947E;
+    background-color: #F7F0E4;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+}
+
+/* PRODUCTS PAGE */
+.products-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding: 0 6rem;
+}
+
+.products-sec .type-1{
+    width: 100%;
+}
+.products-sec .type-1 .products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-height: 250px;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+.products-sec .type-1 .products .card::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: inherit;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,100%));
+}
+.products-sec .type-1 .products .card{
+    position: relative;
+    border-radius: 15px;
+    background-image: url('media/image\ 4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: 1px solid;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 1rem 1.2rem;
+    transition: .2s ease-in-out;
+}
+.products-sec .type-1 .products .card:hover{
+    transform: translateY(-.25rem);
+    box-shadow: 0 10px 25px rgba(0,0,0,15%);
+}
+
+.products-sec .type-1{
+    color: #A9947E;
+}
+.products-sec .type-1 .products .card h3{
+    position: absolute;
+    z-index: 100;
+}
+/* ABOUT - PAGE */
+#about-main .first{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#about-main img{
+    width: 100%;
+}
+#about-main .info{
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #F7F0E4;
+    width: 100%;
+}
+#about-main .info h2, #about-main .info p{
+    color: #503C2F;
+}
+#sm-icons{
+    background-color: #F7F0E4;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+#sm-icons img{
+    width: 150px;
 }
