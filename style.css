@@ -35,9 +35,10 @@ header .icons{
     justify-content: center;
     align-items: center;
 }
-header .icons a svg:hover{
+header .icons a:hover svg{
     fill: #503C2F;
 }
+
 .logo{
     font-family: "Italianno", cursive;
     font-size: 56px;
@@ -351,4 +352,58 @@ footer .links a:hover{
 
 .empty{
     border: 1px solid red !important;
+}
+#account-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+#account-form form a{
+    text-decoration: none;
+}
+#account-form form{
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #A9947E;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F0E4;
+    border-radius: 10px;
+    display: none !important;
+}
+#account-form form input{
+    padding: 7px 10px;
+    font-size: 16px;
+    border: 1px solid #A9947E;
+    border-radius: 5px;
+}
+#account-form form button{
+    padding: 10px 20px;
+    background-color: #503C2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#account-form form button:hover{
+    background-color: #A9947E;
+}
+#account-form #signup-form.active{
+    display: flex !important;
+}
+#account-form #login-form.active{
+    display: flex !important;
+}
+.close-btn{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
